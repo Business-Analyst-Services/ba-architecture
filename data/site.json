@@ -1,0 +1,6 @@
+{
+  "repo": "ba-architecture",
+  "base": "/ba-architecture/",
+  "updated": "2026-10-13",
+  "note": "'updated' is the date the model or the site last changed, and is deliberately a committed value rather than the clock. The Pages workflow rebuilds and fails if the generated HTML differs from what is committed; a date read from date.today() would make that check fail on every later day. Bump this by hand when the model changes."
+}

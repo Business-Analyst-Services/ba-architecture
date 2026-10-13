@@ -1,0 +1,2297 @@
+{
+  "meta": {
+    "bundleVersion": "1.0.0",
+    "scaffoldId": "ff32d393-0683-4be7-9108-134ef7198995",
+    "name": "Business Analyst Services \u2014 Business Architecture",
+    "generatedAt": "2026-09-15T05:51:56Z",
+    "generatedBy": "PlausibleBA Skills Library v1.5.0",
+    "coverage": {
+      "capabilitiesTotal": 81,
+      "capabilitiesMapped": 67,
+      "capabilitiesUnmapped": [
+        "KID-2.1",
+        "KID-2.2",
+        "KID-2.3",
+        "MKT-1.1",
+        "MKT-2.3",
+        "MKT-4.1",
+        "OPS-3.1",
+        "OPS-3.2",
+        "PLT-1.1",
+        "PLT-1.2",
+        "PLT-1.3",
+        "PLT-4.2",
+        "PSG-1.1",
+        "PSG-1.2"
+      ]
+    }
+  },
+  "elements": {
+    "capabilities": {
+      "PSG": {
+        "id": "PSG",
+        "name": "Practice Strategy & Governance",
+        "level": 1,
+        "parentId": null
+      },
+      "PSG-1": {
+        "id": "PSG-1",
+        "name": "Practice Strategy & Positioning",
+        "level": 2,
+        "parentId": "PSG"
+      },
+      "PSG-1.1": {
+        "id": "PSG-1.1",
+        "name": "Market Positioning Definition",
+        "level": 3,
+        "parentId": "PSG-1",
+        "businessObject": "Practice Strategy",
+        "conceptId": "R1"
+      },
+      "PSG-1.2": {
+        "id": "PSG-1.2",
+        "name": "Service Portfolio Planning",
+        "level": 3,
+        "parentId": "PSG-1",
+        "businessObject": "Service Offering",
+        "conceptId": "R1"
+      },
+      "PSG-1.3": {
+        "id": "PSG-1.3",
+        "name": "Pricing & Packaging",
+        "level": 3,
+        "parentId": "PSG-1",
+        "businessObject": "Service Offering",
+        "conceptId": "R1"
+      },
+      "PSG-2": {
+        "id": "PSG-2",
+        "name": "Methodology Stewardship",
+        "level": 2,
+        "parentId": "PSG"
+      },
+      "PSG-2.1": {
+        "id": "PSG-2.1",
+        "name": "Methodology Definition",
+        "level": 3,
+        "parentId": "PSG-2",
+        "businessObject": "Methodology",
+        "conceptId": "R2"
+      },
+      "PSG-2.2": {
+        "id": "PSG-2.2",
+        "name": "Framework Mapping & Alignment",
+        "level": 3,
+        "parentId": "PSG-2",
+        "businessObject": "Methodology",
+        "conceptId": "R2"
+      },
+      "PSG-3": {
+        "id": "PSG-3",
+        "name": "Quality Assurance",
+        "level": 2,
+        "parentId": "PSG"
+      },
+      "PSG-3.1": {
+        "id": "PSG-3.1",
+        "name": "Deliverable Review",
+        "level": 3,
+        "parentId": "PSG-3",
+        "businessObject": "Deliverable",
+        "conceptId": "D5"
+      },
+      "PSG-3.2": {
+        "id": "PSG-3.2",
+        "name": "Practice Standards Management",
+        "level": 3,
+        "parentId": "PSG-3",
+        "businessObject": "Standard",
+        "conceptId": "R2"
+      },
+      "PSG-4": {
+        "id": "PSG-4",
+        "name": "AI Governance & Ethics",
+        "level": 2,
+        "parentId": "PSG"
+      },
+      "PSG-4.1": {
+        "id": "PSG-4.1",
+        "name": "AI Usage Policy Management",
+        "level": 3,
+        "parentId": "PSG-4",
+        "businessObject": "AI Policy",
+        "conceptId": "R2"
+      },
+      "PSG-4.2": {
+        "id": "PSG-4.2",
+        "name": "AI Output Assurance",
+        "level": 3,
+        "parentId": "PSG-4",
+        "businessObject": "AI Policy",
+        "conceptId": "R2"
+      },
+      "CEA": {
+        "id": "CEA",
+        "name": "Client Engagement & Advisory",
+        "level": 1,
+        "parentId": null
+      },
+      "CEA-1": {
+        "id": "CEA-1",
+        "name": "Opportunity Qualification",
+        "level": 2,
+        "parentId": "CEA"
+      },
+      "CEA-1.1": {
+        "id": "CEA-1.1",
+        "name": "Enquiry Triage",
+        "level": 3,
+        "parentId": "CEA-1",
+        "businessObject": "Opportunity",
+        "conceptId": "D1"
+      },
+      "CEA-1.2": {
+        "id": "CEA-1.2",
+        "name": "Needs Assessment",
+        "level": 3,
+        "parentId": "CEA-1",
+        "businessObject": "Opportunity",
+        "conceptId": "D1"
+      },
+      "CEA-1.3": {
+        "id": "CEA-1.3",
+        "name": "Proposal Development",
+        "level": 3,
+        "parentId": "CEA-1",
+        "businessObject": "Proposal",
+        "conceptId": "D1"
+      },
+      "CEA-2": {
+        "id": "CEA-2",
+        "name": "Engagement Contracting",
+        "level": 2,
+        "parentId": "CEA"
+      },
+      "CEA-2.1": {
+        "id": "CEA-2.1",
+        "name": "Statement of Work Agreement",
+        "level": 3,
+        "parentId": "CEA-2",
+        "businessObject": "Contract",
+        "conceptId": "D2"
+      },
+      "CEA-2.2": {
+        "id": "CEA-2.2",
+        "name": "Commercial Terms Setting",
+        "level": 3,
+        "parentId": "CEA-2",
+        "businessObject": "Contract",
+        "conceptId": "D2"
+      },
+      "CEA-3": {
+        "id": "CEA-3",
+        "name": "Business Analysis Delivery",
+        "level": 2,
+        "parentId": "CEA"
+      },
+      "CEA-3.1": {
+        "id": "CEA-3.1",
+        "name": "Stakeholder Analysis",
+        "level": 3,
+        "parentId": "CEA-3",
+        "businessObject": "Stakeholder",
+        "conceptId": "P2"
+      },
+      "CEA-3.2": {
+        "id": "CEA-3.2",
+        "name": "Requirements Elicitation",
+        "level": 3,
+        "parentId": "CEA-3",
+        "businessObject": "Requirement",
+        "conceptId": "D4"
+      },
+      "CEA-3.3": {
+        "id": "CEA-3.3",
+        "name": "Requirements Specification",
+        "level": 3,
+        "parentId": "CEA-3",
+        "businessObject": "Requirement",
+        "conceptId": "D4"
+      },
+      "CEA-3.4": {
+        "id": "CEA-3.4",
+        "name": "Process & Capability Modelling",
+        "level": 3,
+        "parentId": "CEA-3",
+        "businessObject": "Model",
+        "conceptId": "D4"
+      },
+      "CEA-3.5": {
+        "id": "CEA-3.5",
+        "name": "Solution Option Analysis",
+        "level": 3,
+        "parentId": "CEA-3",
+        "businessObject": "Solution Option",
+        "conceptId": "D4"
+      },
+      "CEA-3.6": {
+        "id": "CEA-3.6",
+        "name": "Traceability Management",
+        "level": 3,
+        "parentId": "CEA-3",
+        "businessObject": "Requirement",
+        "conceptId": "D4"
+      },
+      "CEA-4": {
+        "id": "CEA-4",
+        "name": "Engagement Governance",
+        "level": 2,
+        "parentId": "CEA"
+      },
+      "CEA-4.1": {
+        "id": "CEA-4.1",
+        "name": "Engagement Planning",
+        "level": 3,
+        "parentId": "CEA-4",
+        "businessObject": "Engagement",
+        "conceptId": "D3"
+      },
+      "CEA-4.2": {
+        "id": "CEA-4.2",
+        "name": "Progress & Status Reporting",
+        "level": 3,
+        "parentId": "CEA-4",
+        "businessObject": "Status Report",
+        "conceptId": "D5"
+      },
+      "CEA-4.3": {
+        "id": "CEA-4.3",
+        "name": "Risk & Issue Management",
+        "level": 3,
+        "parentId": "CEA-4",
+        "businessObject": "Risk",
+        "conceptId": "D9"
+      },
+      "CEA-4.4": {
+        "id": "CEA-4.4",
+        "name": "Change Control",
+        "level": 3,
+        "parentId": "CEA-4",
+        "businessObject": "Change Request",
+        "conceptId": "D9"
+      },
+      "CEA-5": {
+        "id": "CEA-5",
+        "name": "Closure & Benefits Realisation",
+        "level": 2,
+        "parentId": "CEA"
+      },
+      "CEA-5.1": {
+        "id": "CEA-5.1",
+        "name": "Deliverable Handover",
+        "level": 3,
+        "parentId": "CEA-5",
+        "businessObject": "Deliverable",
+        "conceptId": "D5"
+      },
+      "CEA-5.2": {
+        "id": "CEA-5.2",
+        "name": "Benefits Assessment",
+        "level": 3,
+        "parentId": "CEA-5",
+        "businessObject": "Benefit",
+        "conceptId": "D7"
+      },
+      "CEA-5.3": {
+        "id": "CEA-5.3",
+        "name": "Engagement Retrospective",
+        "level": 3,
+        "parentId": "CEA-5",
+        "businessObject": "Engagement",
+        "conceptId": "D3"
+      },
+      "KID": {
+        "id": "KID",
+        "name": "Knowledge & IP Development",
+        "level": 1,
+        "parentId": null
+      },
+      "KID-1": {
+        "id": "KID-1",
+        "name": "Research & Insight",
+        "level": 2,
+        "parentId": "KID"
+      },
+      "KID-1.1": {
+        "id": "KID-1.1",
+        "name": "Market & Vendor Research",
+        "level": 3,
+        "parentId": "KID-1",
+        "businessObject": "Research Finding",
+        "conceptId": "D7"
+      },
+      "KID-1.2": {
+        "id": "KID-1.2",
+        "name": "Practice Research",
+        "level": 3,
+        "parentId": "KID-1",
+        "businessObject": "Research Finding",
+        "conceptId": "D7"
+      },
+      "KID-2": {
+        "id": "KID-2",
+        "name": "Authoring & Publication",
+        "level": 2,
+        "parentId": "KID"
+      },
+      "KID-2.1": {
+        "id": "KID-2.1",
+        "name": "Manuscript Authoring",
+        "level": 3,
+        "parentId": "KID-2",
+        "businessObject": "Publication",
+        "conceptId": "R3"
+      },
+      "KID-2.2": {
+        "id": "KID-2.2",
+        "name": "Editorial Review",
+        "level": 3,
+        "parentId": "KID-2",
+        "businessObject": "Publication",
+        "conceptId": "R3"
+      },
+      "KID-2.3": {
+        "id": "KID-2.3",
+        "name": "Publishing & Distribution",
+        "level": 3,
+        "parentId": "KID-2",
+        "businessObject": "Publication",
+        "conceptId": "R3"
+      },
+      "KID-3": {
+        "id": "KID-3",
+        "name": "Playbook & Asset Development",
+        "level": 2,
+        "parentId": "KID"
+      },
+      "KID-3.1": {
+        "id": "KID-3.1",
+        "name": "Playbook Design",
+        "level": 3,
+        "parentId": "KID-3",
+        "businessObject": "Playbook",
+        "conceptId": "R3"
+      },
+      "KID-3.2": {
+        "id": "KID-3.2",
+        "name": "Template & Tool Development",
+        "level": 3,
+        "parentId": "KID-3",
+        "businessObject": "Template",
+        "conceptId": "R3"
+      },
+      "KID-3.3": {
+        "id": "KID-3.3",
+        "name": "Visual Asset Production",
+        "level": 3,
+        "parentId": "KID-3",
+        "businessObject": "Visual Asset",
+        "conceptId": "R3"
+      },
+      "KID-4": {
+        "id": "KID-4",
+        "name": "IP Lifecycle Management",
+        "level": 2,
+        "parentId": "KID"
+      },
+      "KID-4.1": {
+        "id": "KID-4.1",
+        "name": "IP Versioning",
+        "level": 3,
+        "parentId": "KID-4",
+        "businessObject": "IP Asset",
+        "conceptId": "R3"
+      },
+      "KID-4.2": {
+        "id": "KID-4.2",
+        "name": "IP Licensing & Rights",
+        "level": 3,
+        "parentId": "KID-4",
+        "businessObject": "IP Asset",
+        "conceptId": "R3"
+      },
+      "LTR": {
+        "id": "LTR",
+        "name": "Learning & Training",
+        "level": 1,
+        "parentId": null
+      },
+      "LTR-1": {
+        "id": "LTR-1",
+        "name": "Curriculum Design",
+        "level": 2,
+        "parentId": "LTR"
+      },
+      "LTR-1.1": {
+        "id": "LTR-1.1",
+        "name": "Learning Outcome Definition",
+        "level": 3,
+        "parentId": "LTR-1",
+        "businessObject": "Curriculum",
+        "conceptId": "R4"
+      },
+      "LTR-1.2": {
+        "id": "LTR-1.2",
+        "name": "Module & Session Design",
+        "level": 3,
+        "parentId": "LTR-1",
+        "businessObject": "Curriculum",
+        "conceptId": "R4"
+      },
+      "LTR-1.3": {
+        "id": "LTR-1.3",
+        "name": "Courseware Production",
+        "level": 3,
+        "parentId": "LTR-1",
+        "businessObject": "Courseware",
+        "conceptId": "R4"
+      },
+      "LTR-2": {
+        "id": "LTR-2",
+        "name": "Scheduling & Enrolment",
+        "level": 2,
+        "parentId": "LTR"
+      },
+      "LTR-2.1": {
+        "id": "LTR-2.1",
+        "name": "Cohort Scheduling",
+        "level": 3,
+        "parentId": "LTR-2",
+        "businessObject": "Cohort",
+        "conceptId": "R4"
+      },
+      "LTR-2.2": {
+        "id": "LTR-2.2",
+        "name": "Registration & Ticketing",
+        "level": 3,
+        "parentId": "LTR-2",
+        "businessObject": "Enrolment",
+        "conceptId": "D6"
+      },
+      "LTR-2.3": {
+        "id": "LTR-2.3",
+        "name": "Enrolment Administration",
+        "level": 3,
+        "parentId": "LTR-2",
+        "businessObject": "Enrolment",
+        "conceptId": "D6"
+      },
+      "LTR-3": {
+        "id": "LTR-3",
+        "name": "Facilitation & Delivery",
+        "level": 2,
+        "parentId": "LTR"
+      },
+      "LTR-3.1": {
+        "id": "LTR-3.1",
+        "name": "Session Facilitation",
+        "level": 3,
+        "parentId": "LTR-3",
+        "businessObject": "Session",
+        "conceptId": "R4"
+      },
+      "LTR-3.2": {
+        "id": "LTR-3.2",
+        "name": "Workshop Facilitation",
+        "level": 3,
+        "parentId": "LTR-3",
+        "businessObject": "Session",
+        "conceptId": "R4"
+      },
+      "LTR-3.3": {
+        "id": "LTR-3.3",
+        "name": "Learner Support",
+        "level": 3,
+        "parentId": "LTR-3",
+        "businessObject": "Learner",
+        "conceptId": "P3"
+      },
+      "LTR-4": {
+        "id": "LTR-4",
+        "name": "Assessment & Certification",
+        "level": 2,
+        "parentId": "LTR"
+      },
+      "LTR-4.1": {
+        "id": "LTR-4.1",
+        "name": "Assessment Design",
+        "level": 3,
+        "parentId": "LTR-4",
+        "businessObject": "Assessment",
+        "conceptId": "R4"
+      },
+      "LTR-4.2": {
+        "id": "LTR-4.2",
+        "name": "Assessment Marking",
+        "level": 3,
+        "parentId": "LTR-4",
+        "businessObject": "Assessment",
+        "conceptId": "R4"
+      },
+      "LTR-4.3": {
+        "id": "LTR-4.3",
+        "name": "Certification Issuance",
+        "level": 3,
+        "parentId": "LTR-4",
+        "businessObject": "Certificate",
+        "conceptId": "D6"
+      },
+      "LTR-5": {
+        "id": "LTR-5",
+        "name": "Learner Feedback",
+        "level": 2,
+        "parentId": "LTR"
+      },
+      "LTR-5.1": {
+        "id": "LTR-5.1",
+        "name": "Feedback Collection",
+        "level": 3,
+        "parentId": "LTR-5",
+        "businessObject": "Feedback",
+        "conceptId": "D7"
+      },
+      "LTR-5.2": {
+        "id": "LTR-5.2",
+        "name": "Course Improvement",
+        "level": 3,
+        "parentId": "LTR-5",
+        "businessObject": "Curriculum",
+        "conceptId": "R4"
+      },
+      "MKT": {
+        "id": "MKT",
+        "name": "Market Development",
+        "level": 1,
+        "parentId": null
+      },
+      "MKT-1": {
+        "id": "MKT-1",
+        "name": "Brand & Content",
+        "level": 2,
+        "parentId": "MKT"
+      },
+      "MKT-1.1": {
+        "id": "MKT-1.1",
+        "name": "Brand Management",
+        "level": 3,
+        "parentId": "MKT-1",
+        "businessObject": "Brand",
+        "conceptId": "R6"
+      },
+      "MKT-1.2": {
+        "id": "MKT-1.2",
+        "name": "Content Production",
+        "level": 3,
+        "parentId": "MKT-1",
+        "businessObject": "Content Item",
+        "conceptId": "R6"
+      },
+      "MKT-1.3": {
+        "id": "MKT-1.3",
+        "name": "Content Publishing",
+        "level": 3,
+        "parentId": "MKT-1",
+        "businessObject": "Content Item",
+        "conceptId": "R6"
+      },
+      "MKT-2": {
+        "id": "MKT-2",
+        "name": "Campaign Execution",
+        "level": 2,
+        "parentId": "MKT"
+      },
+      "MKT-2.1": {
+        "id": "MKT-2.1",
+        "name": "Campaign Planning",
+        "level": 3,
+        "parentId": "MKT-2",
+        "businessObject": "Campaign",
+        "conceptId": "R6"
+      },
+      "MKT-2.2": {
+        "id": "MKT-2.2",
+        "name": "Campaign Delivery",
+        "level": 3,
+        "parentId": "MKT-2",
+        "businessObject": "Campaign",
+        "conceptId": "R6"
+      },
+      "MKT-2.3": {
+        "id": "MKT-2.3",
+        "name": "Campaign Performance Analysis",
+        "level": 3,
+        "parentId": "MKT-2",
+        "businessObject": "Campaign",
+        "conceptId": "R6"
+      },
+      "MKT-3": {
+        "id": "MKT-3",
+        "name": "Lead Management",
+        "level": 2,
+        "parentId": "MKT"
+      },
+      "MKT-3.1": {
+        "id": "MKT-3.1",
+        "name": "Lead Capture",
+        "level": 3,
+        "parentId": "MKT-3",
+        "businessObject": "Lead",
+        "conceptId": "D1"
+      },
+      "MKT-3.2": {
+        "id": "MKT-3.2",
+        "name": "Lead Nurture",
+        "level": 3,
+        "parentId": "MKT-3",
+        "businessObject": "Lead",
+        "conceptId": "D1"
+      },
+      "MKT-3.3": {
+        "id": "MKT-3.3",
+        "name": "Lead Conversion",
+        "level": 3,
+        "parentId": "MKT-3",
+        "businessObject": "Lead",
+        "conceptId": "D1"
+      },
+      "MKT-4": {
+        "id": "MKT-4",
+        "name": "Partnerships & Community",
+        "level": 2,
+        "parentId": "MKT"
+      },
+      "MKT-4.1": {
+        "id": "MKT-4.1",
+        "name": "Partner Relationship Management",
+        "level": 3,
+        "parentId": "MKT-4",
+        "businessObject": "Partner",
+        "conceptId": "P5"
+      },
+      "MKT-4.2": {
+        "id": "MKT-4.2",
+        "name": "Community & Study Group Facilitation",
+        "level": 3,
+        "parentId": "MKT-4",
+        "businessObject": "Community Member",
+        "conceptId": "P3"
+      },
+      "PLT": {
+        "id": "PLT",
+        "name": "Platform & Technology",
+        "level": 1,
+        "parentId": null
+      },
+      "PLT-1": {
+        "id": "PLT-1",
+        "name": "Product Engineering",
+        "level": 2,
+        "parentId": "PLT"
+      },
+      "PLT-1.1": {
+        "id": "PLT-1.1",
+        "name": "Product Backlog Management",
+        "level": 3,
+        "parentId": "PLT-1",
+        "businessObject": "Backlog Item",
+        "conceptId": "R5"
+      },
+      "PLT-1.2": {
+        "id": "PLT-1.2",
+        "name": "Software Development",
+        "level": 3,
+        "parentId": "PLT-1",
+        "businessObject": "Software Component",
+        "conceptId": "R5"
+      },
+      "PLT-1.3": {
+        "id": "PLT-1.3",
+        "name": "Automated Testing",
+        "level": 3,
+        "parentId": "PLT-1",
+        "businessObject": "Test Case",
+        "conceptId": "R5"
+      },
+      "PLT-2": {
+        "id": "PLT-2",
+        "name": "Release & Environment Management",
+        "level": 2,
+        "parentId": "PLT"
+      },
+      "PLT-2.1": {
+        "id": "PLT-2.1",
+        "name": "Environment Provisioning",
+        "level": 3,
+        "parentId": "PLT-2",
+        "businessObject": "Environment",
+        "conceptId": "R5"
+      },
+      "PLT-2.2": {
+        "id": "PLT-2.2",
+        "name": "Release Deployment",
+        "level": 3,
+        "parentId": "PLT-2",
+        "businessObject": "Release",
+        "conceptId": "R5"
+      },
+      "PLT-2.3": {
+        "id": "PLT-2.3",
+        "name": "Incident Response",
+        "level": 3,
+        "parentId": "PLT-2",
+        "businessObject": "Incident",
+        "conceptId": "D9"
+      },
+      "PLT-3": {
+        "id": "PLT-3",
+        "name": "Data & Analytics",
+        "level": 2,
+        "parentId": "PLT"
+      },
+      "PLT-3.1": {
+        "id": "PLT-3.1",
+        "name": "Usage Analytics",
+        "level": 3,
+        "parentId": "PLT-3",
+        "businessObject": "Analytics Metric",
+        "conceptId": "D7"
+      },
+      "PLT-3.2": {
+        "id": "PLT-3.2",
+        "name": "Reporting & Dashboards",
+        "level": 3,
+        "parentId": "PLT-3",
+        "businessObject": "Analytics Metric",
+        "conceptId": "D7"
+      },
+      "PLT-4": {
+        "id": "PLT-4",
+        "name": "Security & Access",
+        "level": 2,
+        "parentId": "PLT"
+      },
+      "PLT-4.1": {
+        "id": "PLT-4.1",
+        "name": "Identity & Access Management",
+        "level": 3,
+        "parentId": "PLT-4",
+        "businessObject": "User Account",
+        "conceptId": "R5"
+      },
+      "PLT-4.2": {
+        "id": "PLT-4.2",
+        "name": "Data Protection & Privacy",
+        "level": 3,
+        "parentId": "PLT-4",
+        "businessObject": "Privacy Record",
+        "conceptId": "D10"
+      },
+      "OPS": {
+        "id": "OPS",
+        "name": "Business Operations",
+        "level": 1,
+        "parentId": null
+      },
+      "OPS-1": {
+        "id": "OPS-1",
+        "name": "Finance & Billing",
+        "level": 2,
+        "parentId": "OPS"
+      },
+      "OPS-1.1": {
+        "id": "OPS-1.1",
+        "name": "Invoicing",
+        "level": 3,
+        "parentId": "OPS-1",
+        "businessObject": "Invoice",
+        "conceptId": "D8"
+      },
+      "OPS-1.2": {
+        "id": "OPS-1.2",
+        "name": "Payment Collection",
+        "level": 3,
+        "parentId": "OPS-1",
+        "businessObject": "Payment",
+        "conceptId": "D8"
+      },
+      "OPS-1.3": {
+        "id": "OPS-1.3",
+        "name": "Financial Reporting",
+        "level": 3,
+        "parentId": "OPS-1",
+        "businessObject": "Financial Record",
+        "conceptId": "D8"
+      },
+      "OPS-2": {
+        "id": "OPS-2",
+        "name": "Resourcing & Capacity",
+        "level": 2,
+        "parentId": "OPS"
+      },
+      "OPS-2.1": {
+        "id": "OPS-2.1",
+        "name": "Capacity Planning",
+        "level": 3,
+        "parentId": "OPS-2",
+        "businessObject": "Resource Plan",
+        "conceptId": "P4"
+      },
+      "OPS-2.2": {
+        "id": "OPS-2.2",
+        "name": "Associate & Contractor Sourcing",
+        "level": 3,
+        "parentId": "OPS-2",
+        "businessObject": "Associate",
+        "conceptId": "P4"
+      },
+      "OPS-3": {
+        "id": "OPS-3",
+        "name": "Vendor & Subscription Management",
+        "level": 2,
+        "parentId": "OPS"
+      },
+      "OPS-3.1": {
+        "id": "OPS-3.1",
+        "name": "Vendor Selection",
+        "level": 3,
+        "parentId": "OPS-3",
+        "businessObject": "Vendor",
+        "conceptId": "P6"
+      },
+      "OPS-3.2": {
+        "id": "OPS-3.2",
+        "name": "Subscription Administration",
+        "level": 3,
+        "parentId": "OPS-3",
+        "businessObject": "Subscription",
+        "conceptId": "R5"
+      },
+      "OPS-4": {
+        "id": "OPS-4",
+        "name": "Compliance & Records",
+        "level": 2,
+        "parentId": "OPS"
+      },
+      "OPS-4.1": {
+        "id": "OPS-4.1",
+        "name": "Records Management",
+        "level": 3,
+        "parentId": "OPS-4",
+        "businessObject": "Record",
+        "conceptId": "D10"
+      },
+      "OPS-4.2": {
+        "id": "OPS-4.2",
+        "name": "Regulatory Compliance",
+        "level": 3,
+        "parentId": "OPS-4",
+        "businessObject": "Compliance Obligation",
+        "conceptId": "D10"
+      }
+    },
+    "concepts": {
+      "P1": {
+        "id": "P1",
+        "name": "Client",
+        "type": "Party",
+        "definition": "An organisation BAS delivers consulting or advisory work to.",
+        "relationships": [
+          {
+            "to": "P2",
+            "label": "employs"
+          },
+          {
+            "to": "D1",
+            "label": "is the source of"
+          }
+        ]
+      },
+      "P2": {
+        "id": "P2",
+        "name": "Client Stakeholder",
+        "type": "Party",
+        "definition": "A named individual within a client who holds a need, a decision or an approval.",
+        "relationships": [
+          {
+            "to": "D4",
+            "label": "is the source of"
+          }
+        ]
+      },
+      "P3": {
+        "id": "P3",
+        "name": "Learner",
+        "type": "Party",
+        "definition": "An individual enrolled in a BAS course, workshop or study community.",
+        "relationships": [
+          {
+            "to": "D6",
+            "label": "registers via"
+          }
+        ]
+      },
+      "P4": {
+        "id": "P4",
+        "name": "Practitioner",
+        "type": "Party",
+        "definition": "A BAS consultant, facilitator, author or associate who performs the work.",
+        "relationships": [
+          {
+            "to": "D3",
+            "label": "delivers"
+          },
+          {
+            "to": "R4",
+            "label": "facilitates"
+          }
+        ]
+      },
+      "P5": {
+        "id": "P5",
+        "name": "Partner",
+        "type": "Party",
+        "definition": "An organisation BAS co-delivers, co-markets or co-publishes with.",
+        "relationships": [
+          {
+            "to": "R4",
+            "label": "co-delivers"
+          },
+          {
+            "to": "R3",
+            "label": "co-publishes"
+          }
+        ]
+      },
+      "P6": {
+        "id": "P6",
+        "name": "Vendor",
+        "type": "Party",
+        "definition": "A supplier of platform, tooling or services BAS consumes.",
+        "relationships": [
+          {
+            "to": "R5",
+            "label": "supplies"
+          }
+        ]
+      },
+      "R1": {
+        "id": "R1",
+        "name": "Service Offering",
+        "type": "Resource",
+        "definition": "A named, priced consulting or training product in the BAS portfolio.",
+        "relationships": [
+          {
+            "to": "D1",
+            "label": "scopes"
+          },
+          {
+            "to": "R4",
+            "label": "packages"
+          },
+          {
+            "to": "R3",
+            "label": "packages"
+          }
+        ]
+      },
+      "R2": {
+        "id": "R2",
+        "name": "Methodology",
+        "type": "Resource",
+        "definition": "The BA practice model, standards, framework mappings and AI governance policy set.",
+        "relationships": [
+          {
+            "to": "D3",
+            "label": "governs"
+          },
+          {
+            "to": "R3",
+            "label": "is embodied in"
+          }
+        ]
+      },
+      "R3": {
+        "id": "R3",
+        "name": "IP Asset",
+        "type": "Resource",
+        "definition": "Reusable intellectual property: playbooks, templates, publications and visual assets.",
+        "relationships": [
+          {
+            "to": "R4",
+            "label": "is the source of"
+          }
+        ]
+      },
+      "R4": {
+        "id": "R4",
+        "name": "Course",
+        "type": "Resource",
+        "definition": "A curriculum with its courseware, scheduled cohorts and sessions.",
+        "relationships": []
+      },
+      "R5": {
+        "id": "R5",
+        "name": "Platform Component",
+        "type": "Resource",
+        "definition": "Software, environments, releases, tests, accounts and subscriptions making up the BAS platform.",
+        "relationships": [
+          {
+            "to": "R4",
+            "label": "hosts"
+          },
+          {
+            "to": "R6",
+            "label": "hosts"
+          },
+          {
+            "to": "D9",
+            "label": "raises"
+          },
+          {
+            "to": "D10",
+            "label": "is evidenced by"
+          }
+        ]
+      },
+      "R6": {
+        "id": "R6",
+        "name": "Brand Content",
+        "type": "Resource",
+        "definition": "Brand identity, marketing content items and campaign assets.",
+        "relationships": [
+          {
+            "to": "D1",
+            "label": "generates"
+          }
+        ]
+      },
+      "D1": {
+        "id": "D1",
+        "name": "Opportunity",
+        "type": "Record",
+        "definition": "Demand from an identified or prospective client, from first enquiry through proposal.",
+        "relationships": [
+          {
+            "to": "D2",
+            "label": "converts to"
+          }
+        ]
+      },
+      "D2": {
+        "id": "D2",
+        "name": "Contract",
+        "type": "Record",
+        "definition": "The agreed statement of work and commercial terms authorising delivery.",
+        "relationships": [
+          {
+            "to": "D3",
+            "label": "authorises"
+          },
+          {
+            "to": "D8",
+            "label": "is billed through"
+          },
+          {
+            "to": "D10",
+            "label": "is evidenced by"
+          }
+        ]
+      },
+      "D3": {
+        "id": "D3",
+        "name": "Engagement",
+        "type": "Record",
+        "definition": "An instance of consulting delivery against a contract.",
+        "relationships": [
+          {
+            "to": "D4",
+            "label": "specifies"
+          },
+          {
+            "to": "D5",
+            "label": "produces"
+          },
+          {
+            "to": "D9",
+            "label": "raises"
+          },
+          {
+            "to": "D7",
+            "label": "is evaluated by"
+          }
+        ]
+      },
+      "D4": {
+        "id": "D4",
+        "name": "Requirement",
+        "type": "Record",
+        "definition": "An elicited and specified need, including the models and solution options evaluated against it.",
+        "relationships": []
+      },
+      "D5": {
+        "id": "D5",
+        "name": "Deliverable",
+        "type": "Record",
+        "definition": "An artefact produced for and accepted by a client, including status reports.",
+        "relationships": [
+          {
+            "to": "D4",
+            "label": "satisfies"
+          }
+        ]
+      },
+      "D6": {
+        "id": "D6",
+        "name": "Enrolment",
+        "type": "Record",
+        "definition": "A learner's registration, attendance, assessment result and certification for a course.",
+        "relationships": [
+          {
+            "to": "R4",
+            "label": "is held against"
+          },
+          {
+            "to": "D8",
+            "label": "is billed through"
+          },
+          {
+            "to": "D7",
+            "label": "is evaluated by"
+          },
+          {
+            "to": "D10",
+            "label": "is evidenced by"
+          }
+        ]
+      },
+      "D7": {
+        "id": "D7",
+        "name": "Outcome & Insight",
+        "type": "Record",
+        "definition": "Measured results and learning: benefits realised, feedback, retrospectives, research findings and usage metrics.",
+        "relationships": [
+          {
+            "to": "R3",
+            "label": "improves"
+          },
+          {
+            "to": "R4",
+            "label": "improves"
+          }
+        ]
+      },
+      "D8": {
+        "id": "D8",
+        "name": "Financial Transaction",
+        "type": "Record",
+        "definition": "Invoices raised, payments received and the financial records derived from them.",
+        "relationships": []
+      },
+      "D9": {
+        "id": "D9",
+        "name": "Risk & Change Record",
+        "type": "Record",
+        "definition": "Risks, issues, change requests and incidents raised against delivery or the platform.",
+        "relationships": []
+      },
+      "D10": {
+        "id": "D10",
+        "name": "Compliance Record",
+        "type": "Record",
+        "definition": "Retained records evidencing regulatory, privacy and licensing obligations.",
+        "relationships": []
+      }
+    },
+    "valueStreams": {
+      "VS1": {
+        "id": "VS1",
+        "name": "Client Need to Realised Benefit",
+        "trigger": "A market signal or client need is identified",
+        "valueProposition": "A client capability gap is closed with traceable, assured business analysis, and the practice gains reusable IP.",
+        "stakeholder": "Client",
+        "stageIds": [
+          "VS1-S1",
+          "VS1-S2",
+          "VS1-S3",
+          "VS1-S4",
+          "VS1-S5",
+          "VS1-S6"
+        ]
+      },
+      "VS2": {
+        "id": "VS2",
+        "name": "Learner Interest to Capability Applied",
+        "trigger": "A practitioner or employer identifies a capability gap",
+        "valueProposition": "A practitioner gains a demonstrable, certified BA capability they apply in their own work, and the practice gains a community and a feedback loop.",
+        "stakeholder": "Learner",
+        "stageIds": [
+          "VS2-S1",
+          "VS2-S2",
+          "VS2-S3",
+          "VS2-S4",
+          "VS2-S5"
+        ]
+      }
+    },
+    "valueStreamStages": {
+      "VS1-S1": {
+        "id": "VS1-S1",
+        "name": "Attract & Qualify",
+        "valueStreamId": "VS1",
+        "sequence": 1,
+        "entryState": "Market signal or unqualified need exists",
+        "exitState": "Qualified opportunity with an agreed scope",
+        "valueObjectId": "D1",
+        "capabilityIds": [
+          "MKT-1.2",
+          "MKT-1.3",
+          "MKT-2.2",
+          "MKT-3.1",
+          "MKT-3.2",
+          "MKT-3.3",
+          "CEA-1.1",
+          "CEA-1.2"
+        ],
+        "roleIds": [
+          "RO6",
+          "RO1"
+        ],
+        "outcomeId": "VS1-S1-OC",
+        "metricIds": [
+          "VS1-S1-M1",
+          "VS1-S1-M2"
+        ]
+      },
+      "VS1-S2": {
+        "id": "VS1-S2",
+        "name": "Propose & Contract",
+        "valueStreamId": "VS1",
+        "sequence": 2,
+        "entryState": "Qualified opportunity",
+        "exitState": "Signed SOW with terms set and a named delivery team",
+        "valueObjectId": "D2",
+        "capabilityIds": [
+          "CEA-1.3",
+          "CEA-2.1",
+          "CEA-2.2",
+          "PSG-1.3",
+          "OPS-2.1",
+          "OPS-2.2"
+        ],
+        "roleIds": [
+          "RO1",
+          "RO4"
+        ],
+        "outcomeId": "VS1-S2-OC",
+        "metricIds": [
+          "VS1-S2-M1",
+          "VS1-S2-M2"
+        ]
+      },
+      "VS1-S3": {
+        "id": "VS1-S3",
+        "name": "Mobilise",
+        "valueStreamId": "VS1",
+        "sequence": 3,
+        "entryState": "Signed contract",
+        "exitState": "Engagement plan agreed, stakeholders mapped, methodology and tooling in place",
+        "valueObjectId": "D3",
+        "capabilityIds": [
+          "CEA-4.1",
+          "CEA-3.1",
+          "PSG-2.1",
+          "PSG-2.2",
+          "PSG-4.1",
+          "PLT-4.1"
+        ],
+        "roleIds": [
+          "RO2",
+          "RO1",
+          "RO4"
+        ],
+        "outcomeId": "VS1-S3-OC",
+        "metricIds": [
+          "VS1-S3-M1",
+          "VS1-S3-M2"
+        ]
+      },
+      "VS1-S4": {
+        "id": "VS1-S4",
+        "name": "Analyse & Specify",
+        "valueStreamId": "VS1",
+        "sequence": 4,
+        "entryState": "Mobilised engagement",
+        "exitState": "Traceable requirements and evaluated options accepted by the client",
+        "valueObjectId": "D4",
+        "capabilityIds": [
+          "CEA-3.2",
+          "CEA-3.3",
+          "CEA-3.4",
+          "CEA-3.5",
+          "CEA-3.6",
+          "KID-1.1",
+          "KID-1.2",
+          "PSG-4.2"
+        ],
+        "roleIds": [
+          "RO2",
+          "RO4"
+        ],
+        "outcomeId": "VS1-S4-OC",
+        "metricIds": [
+          "VS1-S4-M1",
+          "VS1-S4-M2"
+        ]
+      },
+      "VS1-S5": {
+        "id": "VS1-S5",
+        "name": "Deliver & Assure",
+        "valueStreamId": "VS1",
+        "sequence": 5,
+        "entryState": "Accepted requirements",
+        "exitState": "Reviewed deliverables handed over and accepted",
+        "valueObjectId": "D5",
+        "capabilityIds": [
+          "PSG-3.1",
+          "PSG-3.2",
+          "CEA-4.2",
+          "CEA-4.3",
+          "CEA-4.4",
+          "CEA-5.1"
+        ],
+        "roleIds": [
+          "RO2",
+          "RO1",
+          "RO4"
+        ],
+        "outcomeId": "VS1-S5-OC",
+        "metricIds": [
+          "VS1-S5-M1",
+          "VS1-S5-M2"
+        ]
+      },
+      "VS1-S6": {
+        "id": "VS1-S6",
+        "name": "Realise & Reinvest",
+        "valueStreamId": "VS1",
+        "sequence": 6,
+        "entryState": "Accepted deliverables",
+        "exitState": "Benefits assessed, invoice settled, reusable IP captured back into the practice",
+        "valueObjectId": "D7",
+        "capabilityIds": [
+          "CEA-5.2",
+          "CEA-5.3",
+          "OPS-1.1",
+          "OPS-1.2",
+          "OPS-1.3",
+          "KID-3.1",
+          "KID-3.2",
+          "KID-3.3",
+          "KID-4.1",
+          "KID-4.2",
+          "OPS-4.1",
+          "OPS-4.2"
+        ],
+        "roleIds": [
+          "RO1",
+          "RO8",
+          "RO4"
+        ],
+        "outcomeId": "VS1-S6-OC",
+        "metricIds": [
+          "VS1-S6-M1",
+          "VS1-S6-M2",
+          "VS1-S6-M3"
+        ]
+      },
+      "VS2-S1": {
+        "id": "VS2-S1",
+        "name": "Attract & Enrol",
+        "valueStreamId": "VS2",
+        "sequence": 1,
+        "entryState": "Practitioner or employer has a capability gap",
+        "exitState": "Paid enrolment confirmed in a scheduled cohort",
+        "valueObjectId": "D6",
+        "capabilityIds": [
+          "MKT-1.2",
+          "MKT-1.3",
+          "MKT-2.1",
+          "MKT-2.2",
+          "MKT-3.1",
+          "MKT-3.2",
+          "MKT-3.3",
+          "LTR-2.1",
+          "LTR-2.2",
+          "LTR-2.3",
+          "OPS-1.1",
+          "OPS-1.2"
+        ],
+        "roleIds": [
+          "RO6",
+          "RO8",
+          "RO5"
+        ],
+        "outcomeId": "VS2-S1-OC",
+        "metricIds": [
+          "VS2-S1-M1",
+          "VS2-S1-M2"
+        ]
+      },
+      "VS2-S2": {
+        "id": "VS2-S2",
+        "name": "Prepare",
+        "valueStreamId": "VS2",
+        "sequence": 2,
+        "entryState": "Confirmed cohort",
+        "exitState": "Courseware, platform and facilitator ready for delivery",
+        "valueObjectId": "R4",
+        "capabilityIds": [
+          "LTR-1.1",
+          "LTR-1.2",
+          "LTR-1.3",
+          "KID-3.2",
+          "PLT-2.1",
+          "PLT-2.2",
+          "OPS-2.1"
+        ],
+        "roleIds": [
+          "RO3",
+          "RO7",
+          "RO1"
+        ],
+        "outcomeId": "VS2-S2-OC",
+        "metricIds": [
+          "VS2-S2-M1",
+          "VS2-S2-M2"
+        ]
+      },
+      "VS2-S3": {
+        "id": "VS2-S3",
+        "name": "Deliver",
+        "valueStreamId": "VS2",
+        "sequence": 3,
+        "entryState": "Ready cohort",
+        "exitState": "All sessions delivered and attended",
+        "valueObjectId": "R4",
+        "capabilityIds": [
+          "LTR-3.1",
+          "LTR-3.2",
+          "LTR-3.3",
+          "PLT-2.3",
+          "PLT-4.1"
+        ],
+        "roleIds": [
+          "RO3",
+          "RO5",
+          "RO7"
+        ],
+        "outcomeId": "VS2-S3-OC",
+        "metricIds": [
+          "VS2-S3-M1",
+          "VS2-S3-M2"
+        ]
+      },
+      "VS2-S4": {
+        "id": "VS2-S4",
+        "name": "Assess & Certify",
+        "valueStreamId": "VS2",
+        "sequence": 4,
+        "entryState": "Delivered sessions",
+        "exitState": "Assessments marked and certificates issued",
+        "valueObjectId": "D6",
+        "capabilityIds": [
+          "LTR-4.1",
+          "LTR-4.2",
+          "LTR-4.3",
+          "PSG-3.1"
+        ],
+        "roleIds": [
+          "RO3",
+          "RO8"
+        ],
+        "outcomeId": "VS2-S4-OC",
+        "metricIds": [
+          "VS2-S4-M1",
+          "VS2-S4-M2"
+        ]
+      },
+      "VS2-S5": {
+        "id": "VS2-S5",
+        "name": "Sustain & Improve",
+        "valueStreamId": "VS2",
+        "sequence": 5,
+        "entryState": "Certified learners",
+        "exitState": "Feedback captured, curriculum updated, learner active in the community",
+        "valueObjectId": "D7",
+        "capabilityIds": [
+          "LTR-5.1",
+          "LTR-5.2",
+          "MKT-4.2",
+          "PLT-3.1",
+          "PLT-3.2",
+          "KID-4.1",
+          "PSG-2.1"
+        ],
+        "roleIds": [
+          "RO3",
+          "RO6",
+          "RO1"
+        ],
+        "outcomeId": "VS2-S5-OC",
+        "metricIds": [
+          "VS2-S5-M1",
+          "VS2-S5-M2",
+          "VS2-S5-M3"
+        ]
+      }
+    },
+    "outcomes": {
+      "VS1-S1-OC": {
+        "id": "VS1-S1-OC",
+        "name": "Demand is qualified against the service portfolio before effort is spent on a proposal.",
+        "stageId": "VS1-S1",
+        "valueStreamId": "VS1"
+      },
+      "VS1-S2-OC": {
+        "id": "VS1-S2-OC",
+        "name": "Scope, price and capacity are agreed before delivery is committed.",
+        "stageId": "VS1-S2",
+        "valueStreamId": "VS1"
+      },
+      "VS1-S3-OC": {
+        "id": "VS1-S3-OC",
+        "name": "The engagement starts against a known method, a mapped stakeholder set and agreed AI usage boundaries.",
+        "stageId": "VS1-S3",
+        "valueStreamId": "VS1"
+      },
+      "VS1-S4-OC": {
+        "id": "VS1-S4-OC",
+        "name": "The client's need is expressed as specified, traceable requirements with options evaluated against them.",
+        "stageId": "VS1-S4",
+        "valueStreamId": "VS1"
+      },
+      "VS1-S5-OC": {
+        "id": "VS1-S5-OC",
+        "name": "Deliverables meet practice standards and are formally accepted.",
+        "stageId": "VS1-S5",
+        "valueStreamId": "VS1"
+      },
+      "VS1-S6-OC": {
+        "id": "VS1-S6-OC",
+        "name": "Client value is evidenced, revenue is collected, and the engagement leaves behind reusable practice IP.",
+        "stageId": "VS1-S6",
+        "valueStreamId": "VS1"
+      },
+      "VS2-S1-OC": {
+        "id": "VS2-S1-OC",
+        "name": "Interest becomes a confirmed, paid seat in a dated cohort.",
+        "stageId": "VS2-S1",
+        "valueStreamId": "VS2"
+      },
+      "VS2-S2-OC": {
+        "id": "VS2-S2-OC",
+        "name": "Every cohort starts from current courseware on a working platform with a briefed facilitator.",
+        "stageId": "VS2-S2",
+        "valueStreamId": "VS2"
+      },
+      "VS2-S3-OC": {
+        "id": "VS2-S3-OC",
+        "name": "Learners complete the scheduled sessions with support available throughout.",
+        "stageId": "VS2-S3",
+        "valueStreamId": "VS2"
+      },
+      "VS2-S4-OC": {
+        "id": "VS2-S4-OC",
+        "name": "Capability is demonstrated and evidenced rather than assumed from attendance.",
+        "stageId": "VS2-S4",
+        "valueStreamId": "VS2"
+      },
+      "VS2-S5-OC": {
+        "id": "VS2-S5-OC",
+        "name": "Each cohort makes the next one better, and alumni become a demand channel.",
+        "stageId": "VS2-S5",
+        "valueStreamId": "VS2"
+      }
+    },
+    "roles": {
+      "RO1": {
+        "id": "RO1",
+        "name": "Practice Lead",
+        "description": "Owns positioning, methodology and commercial terms."
+      },
+      "RO2": {
+        "id": "RO2",
+        "name": "Lead Business Analyst",
+        "description": "Runs elicitation, specification and deliverable production on an engagement."
+      },
+      "RO3": {
+        "id": "RO3",
+        "name": "Facilitator",
+        "description": "Delivers courses, workshops and study sessions."
+      },
+      "RO4": {
+        "id": "RO4",
+        "name": "Engagement Sponsor",
+        "description": "Client-side owner who funds the work and accepts deliverables."
+      },
+      "RO5": {
+        "id": "RO5",
+        "name": "Learner",
+        "description": "Individual undertaking a BAS course."
+      },
+      "RO6": {
+        "id": "RO6",
+        "name": "Marketing Lead",
+        "description": "Owns brand, content and campaign execution."
+      },
+      "RO7": {
+        "id": "RO7",
+        "name": "Platform Engineer",
+        "description": "Builds and operates the BAS platform."
+      },
+      "RO8": {
+        "id": "RO8",
+        "name": "Practice Administrator",
+        "description": "Handles enrolment, invoicing, records and vendor admin."
+      }
+    },
+    "metrics": {
+      "VS1-S1-M1": {
+        "id": "VS1-S1-M1",
+        "name": "Enquiry-to-qualified conversion rate",
+        "stageId": "VS1-S1",
+        "valueStreamId": "VS1"
+      },
+      "VS1-S1-M2": {
+        "id": "VS1-S1-M2",
+        "name": "Time from first contact to qualification",
+        "stageId": "VS1-S1",
+        "valueStreamId": "VS1"
+      },
+      "VS1-S2-M1": {
+        "id": "VS1-S2-M1",
+        "name": "Proposal win rate",
+        "stageId": "VS1-S2",
+        "valueStreamId": "VS1"
+      },
+      "VS1-S2-M2": {
+        "id": "VS1-S2-M2",
+        "name": "Proposal turnaround time",
+        "stageId": "VS1-S2",
+        "valueStreamId": "VS1"
+      },
+      "VS1-S3-M1": {
+        "id": "VS1-S3-M1",
+        "name": "Days from signature to first working session",
+        "stageId": "VS1-S3",
+        "valueStreamId": "VS1"
+      },
+      "VS1-S3-M2": {
+        "id": "VS1-S3-M2",
+        "name": "Stakeholder map completeness",
+        "stageId": "VS1-S3",
+        "valueStreamId": "VS1"
+      },
+      "VS1-S4-M1": {
+        "id": "VS1-S4-M1",
+        "name": "Requirements volatility after acceptance",
+        "stageId": "VS1-S4",
+        "valueStreamId": "VS1"
+      },
+      "VS1-S4-M2": {
+        "id": "VS1-S4-M2",
+        "name": "Traceability coverage",
+        "stageId": "VS1-S4",
+        "valueStreamId": "VS1"
+      },
+      "VS1-S5-M1": {
+        "id": "VS1-S5-M1",
+        "name": "First-pass acceptance rate",
+        "stageId": "VS1-S5",
+        "valueStreamId": "VS1"
+      },
+      "VS1-S5-M2": {
+        "id": "VS1-S5-M2",
+        "name": "Defects found after handover",
+        "stageId": "VS1-S5",
+        "valueStreamId": "VS1"
+      },
+      "VS1-S6-M1": {
+        "id": "VS1-S6-M1",
+        "name": "Benefits evidenced vs claimed",
+        "stageId": "VS1-S6",
+        "valueStreamId": "VS1"
+      },
+      "VS1-S6-M2": {
+        "id": "VS1-S6-M2",
+        "name": "Days sales outstanding",
+        "stageId": "VS1-S6",
+        "valueStreamId": "VS1"
+      },
+      "VS1-S6-M3": {
+        "id": "VS1-S6-M3",
+        "name": "Reusable assets harvested per engagement",
+        "stageId": "VS1-S6",
+        "valueStreamId": "VS1"
+      },
+      "VS2-S1-M1": {
+        "id": "VS2-S1-M1",
+        "name": "Landing-page to enrolment conversion",
+        "stageId": "VS2-S1",
+        "valueStreamId": "VS2"
+      },
+      "VS2-S1-M2": {
+        "id": "VS2-S1-M2",
+        "name": "Cohort fill rate at T-14 days",
+        "stageId": "VS2-S1",
+        "valueStreamId": "VS2"
+      },
+      "VS2-S2-M1": {
+        "id": "VS2-S2-M1",
+        "name": "Courseware currency (days since last revision)",
+        "stageId": "VS2-S2",
+        "valueStreamId": "VS2"
+      },
+      "VS2-S2-M2": {
+        "id": "VS2-S2-M2",
+        "name": "Pre-cohort readiness checklist completion",
+        "stageId": "VS2-S2",
+        "valueStreamId": "VS2"
+      },
+      "VS2-S3-M1": {
+        "id": "VS2-S3-M1",
+        "name": "Session attendance rate",
+        "stageId": "VS2-S3",
+        "valueStreamId": "VS2"
+      },
+      "VS2-S3-M2": {
+        "id": "VS2-S3-M2",
+        "name": "Cohort completion rate",
+        "stageId": "VS2-S3",
+        "valueStreamId": "VS2"
+      },
+      "VS2-S4-M1": {
+        "id": "VS2-S4-M1",
+        "name": "Assessment pass rate",
+        "stageId": "VS2-S4",
+        "valueStreamId": "VS2"
+      },
+      "VS2-S4-M2": {
+        "id": "VS2-S4-M2",
+        "name": "Days from final session to certificate issue",
+        "stageId": "VS2-S4",
+        "valueStreamId": "VS2"
+      },
+      "VS2-S5-M1": {
+        "id": "VS2-S5-M1",
+        "name": "Net promoter score",
+        "stageId": "VS2-S5",
+        "valueStreamId": "VS2"
+      },
+      "VS2-S5-M2": {
+        "id": "VS2-S5-M2",
+        "name": "Curriculum changes made per cohort",
+        "stageId": "VS2-S5",
+        "valueStreamId": "VS2"
+      },
+      "VS2-S5-M3": {
+        "id": "VS2-S5-M3",
+        "name": "Alumni referral rate",
+        "stageId": "VS2-S5",
+        "valueStreamId": "VS2"
+      }
+    },
+    "informationObjects": {
+      "IO-PRACTICE-STRATEGY": {
+        "id": "IO-PRACTICE-STRATEGY",
+        "name": "Practice Strategy",
+        "conceptId": "R1",
+        "managedBy": [
+          "PSG-1.1"
+        ]
+      },
+      "IO-SERVICE-OFFERING": {
+        "id": "IO-SERVICE-OFFERING",
+        "name": "Service Offering",
+        "conceptId": "R1",
+        "managedBy": [
+          "PSG-1.2",
+          "PSG-1.3"
+        ]
+      },
+      "IO-METHODOLOGY": {
+        "id": "IO-METHODOLOGY",
+        "name": "Methodology",
+        "conceptId": "R2",
+        "managedBy": [
+          "PSG-2.1",
+          "PSG-2.2"
+        ]
+      },
+      "IO-DELIVERABLE": {
+        "id": "IO-DELIVERABLE",
+        "name": "Deliverable",
+        "conceptId": "D5",
+        "managedBy": [
+          "PSG-3.1",
+          "CEA-5.1"
+        ]
+      },
+      "IO-STANDARD": {
+        "id": "IO-STANDARD",
+        "name": "Standard",
+        "conceptId": "R2",
+        "managedBy": [
+          "PSG-3.2"
+        ]
+      },
+      "IO-AI-POLICY": {
+        "id": "IO-AI-POLICY",
+        "name": "AI Policy",
+        "conceptId": "R2",
+        "managedBy": [
+          "PSG-4.1",
+          "PSG-4.2"
+        ]
+      },
+      "IO-OPPORTUNITY": {
+        "id": "IO-OPPORTUNITY",
+        "name": "Opportunity",
+        "conceptId": "D1",
+        "managedBy": [
+          "CEA-1.1",
+          "CEA-1.2"
+        ]
+      },
+      "IO-PROPOSAL": {
+        "id": "IO-PROPOSAL",
+        "name": "Proposal",
+        "conceptId": "D1",
+        "managedBy": [
+          "CEA-1.3"
+        ]
+      },
+      "IO-CONTRACT": {
+        "id": "IO-CONTRACT",
+        "name": "Contract",
+        "conceptId": "D2",
+        "managedBy": [
+          "CEA-2.1",
+          "CEA-2.2"
+        ]
+      },
+      "IO-STAKEHOLDER": {
+        "id": "IO-STAKEHOLDER",
+        "name": "Stakeholder",
+        "conceptId": "P2",
+        "managedBy": [
+          "CEA-3.1"
+        ]
+      },
+      "IO-REQUIREMENT": {
+        "id": "IO-REQUIREMENT",
+        "name": "Requirement",
+        "conceptId": "D4",
+        "managedBy": [
+          "CEA-3.2",
+          "CEA-3.3",
+          "CEA-3.6"
+        ]
+      },
+      "IO-MODEL": {
+        "id": "IO-MODEL",
+        "name": "Model",
+        "conceptId": "D4",
+        "managedBy": [
+          "CEA-3.4"
+        ]
+      },
+      "IO-SOLUTION-OPTION": {
+        "id": "IO-SOLUTION-OPTION",
+        "name": "Solution Option",
+        "conceptId": "D4",
+        "managedBy": [
+          "CEA-3.5"
+        ]
+      },
+      "IO-ENGAGEMENT": {
+        "id": "IO-ENGAGEMENT",
+        "name": "Engagement",
+        "conceptId": "D3",
+        "managedBy": [
+          "CEA-4.1",
+          "CEA-5.3"
+        ]
+      },
+      "IO-STATUS-REPORT": {
+        "id": "IO-STATUS-REPORT",
+        "name": "Status Report",
+        "conceptId": "D5",
+        "managedBy": [
+          "CEA-4.2"
+        ]
+      },
+      "IO-RISK": {
+        "id": "IO-RISK",
+        "name": "Risk",
+        "conceptId": "D9",
+        "managedBy": [
+          "CEA-4.3"
+        ]
+      },
+      "IO-CHANGE-REQUEST": {
+        "id": "IO-CHANGE-REQUEST",
+        "name": "Change Request",
+        "conceptId": "D9",
+        "managedBy": [
+          "CEA-4.4"
+        ]
+      },
+      "IO-BENEFIT": {
+        "id": "IO-BENEFIT",
+        "name": "Benefit",
+        "conceptId": "D7",
+        "managedBy": [
+          "CEA-5.2"
+        ]
+      },
+      "IO-RESEARCH-FINDING": {
+        "id": "IO-RESEARCH-FINDING",
+        "name": "Research Finding",
+        "conceptId": "D7",
+        "managedBy": [
+          "KID-1.1",
+          "KID-1.2"
+        ]
+      },
+      "IO-PUBLICATION": {
+        "id": "IO-PUBLICATION",
+        "name": "Publication",
+        "conceptId": "R3",
+        "managedBy": [
+          "KID-2.1",
+          "KID-2.2",
+          "KID-2.3"
+        ]
+      },
+      "IO-PLAYBOOK": {
+        "id": "IO-PLAYBOOK",
+        "name": "Playbook",
+        "conceptId": "R3",
+        "managedBy": [
+          "KID-3.1"
+        ]
+      },
+      "IO-TEMPLATE": {
+        "id": "IO-TEMPLATE",
+        "name": "Template",
+        "conceptId": "R3",
+        "managedBy": [
+          "KID-3.2"
+        ]
+      },
+      "IO-VISUAL-ASSET": {
+        "id": "IO-VISUAL-ASSET",
+        "name": "Visual Asset",
+        "conceptId": "R3",
+        "managedBy": [
+          "KID-3.3"
+        ]
+      },
+      "IO-IP-ASSET": {
+        "id": "IO-IP-ASSET",
+        "name": "IP Asset",
+        "conceptId": "R3",
+        "managedBy": [
+          "KID-4.1",
+          "KID-4.2"
+        ]
+      },
+      "IO-CURRICULUM": {
+        "id": "IO-CURRICULUM",
+        "name": "Curriculum",
+        "conceptId": "R4",
+        "managedBy": [
+          "LTR-1.1",
+          "LTR-1.2",
+          "LTR-5.2"
+        ]
+      },
+      "IO-COURSEWARE": {
+        "id": "IO-COURSEWARE",
+        "name": "Courseware",
+        "conceptId": "R4",
+        "managedBy": [
+          "LTR-1.3"
+        ]
+      },
+      "IO-COHORT": {
+        "id": "IO-COHORT",
+        "name": "Cohort",
+        "conceptId": "R4",
+        "managedBy": [
+          "LTR-2.1"
+        ]
+      },
+      "IO-ENROLMENT": {
+        "id": "IO-ENROLMENT",
+        "name": "Enrolment",
+        "conceptId": "D6",
+        "managedBy": [
+          "LTR-2.2",
+          "LTR-2.3"
+        ]
+      },
+      "IO-SESSION": {
+        "id": "IO-SESSION",
+        "name": "Session",
+        "conceptId": "R4",
+        "managedBy": [
+          "LTR-3.1",
+          "LTR-3.2"
+        ]
+      },
+      "IO-LEARNER": {
+        "id": "IO-LEARNER",
+        "name": "Learner",
+        "conceptId": "P3",
+        "managedBy": [
+          "LTR-3.3"
+        ]
+      },
+      "IO-ASSESSMENT": {
+        "id": "IO-ASSESSMENT",
+        "name": "Assessment",
+        "conceptId": "R4",
+        "managedBy": [
+          "LTR-4.1",
+          "LTR-4.2"
+        ]
+      },
+      "IO-CERTIFICATE": {
+        "id": "IO-CERTIFICATE",
+        "name": "Certificate",
+        "conceptId": "D6",
+        "managedBy": [
+          "LTR-4.3"
+        ]
+      },
+      "IO-FEEDBACK": {
+        "id": "IO-FEEDBACK",
+        "name": "Feedback",
+        "conceptId": "D7",
+        "managedBy": [
+          "LTR-5.1"
+        ]
+      },
+      "IO-BRAND": {
+        "id": "IO-BRAND",
+        "name": "Brand",
+        "conceptId": "R6",
+        "managedBy": [
+          "MKT-1.1"
+        ]
+      },
+      "IO-CONTENT-ITEM": {
+        "id": "IO-CONTENT-ITEM",
+        "name": "Content Item",
+        "conceptId": "R6",
+        "managedBy": [
+          "MKT-1.2",
+          "MKT-1.3"
+        ]
+      },
+      "IO-CAMPAIGN": {
+        "id": "IO-CAMPAIGN",
+        "name": "Campaign",
+        "conceptId": "R6",
+        "managedBy": [
+          "MKT-2.1",
+          "MKT-2.2",
+          "MKT-2.3"
+        ]
+      },
+      "IO-LEAD": {
+        "id": "IO-LEAD",
+        "name": "Lead",
+        "conceptId": "D1",
+        "managedBy": [
+          "MKT-3.1",
+          "MKT-3.2",
+          "MKT-3.3"
+        ]
+      },
+      "IO-PARTNER": {
+        "id": "IO-PARTNER",
+        "name": "Partner",
+        "conceptId": "P5",
+        "managedBy": [
+          "MKT-4.1"
+        ]
+      },
+      "IO-COMMUNITY-MEMBER": {
+        "id": "IO-COMMUNITY-MEMBER",
+        "name": "Community Member",
+        "conceptId": "P3",
+        "managedBy": [
+          "MKT-4.2"
+        ]
+      },
+      "IO-BACKLOG-ITEM": {
+        "id": "IO-BACKLOG-ITEM",
+        "name": "Backlog Item",
+        "conceptId": "R5",
+        "managedBy": [
+          "PLT-1.1"
+        ]
+      },
+      "IO-SOFTWARE-COMPONENT": {
+        "id": "IO-SOFTWARE-COMPONENT",
+        "name": "Software Component",
+        "conceptId": "R5",
+        "managedBy": [
+          "PLT-1.2"
+        ]
+      },
+      "IO-TEST-CASE": {
+        "id": "IO-TEST-CASE",
+        "name": "Test Case",
+        "conceptId": "R5",
+        "managedBy": [
+          "PLT-1.3"
+        ]
+      },
+      "IO-ENVIRONMENT": {
+        "id": "IO-ENVIRONMENT",
+        "name": "Environment",
+        "conceptId": "R5",
+        "managedBy": [
+          "PLT-2.1"
+        ]
+      },
+      "IO-RELEASE": {
+        "id": "IO-RELEASE",
+        "name": "Release",
+        "conceptId": "R5",
+        "managedBy": [
+          "PLT-2.2"
+        ]
+      },
+      "IO-INCIDENT": {
+        "id": "IO-INCIDENT",
+        "name": "Incident",
+        "conceptId": "D9",
+        "managedBy": [
+          "PLT-2.3"
+        ]
+      },
+      "IO-ANALYTICS-METRIC": {
+        "id": "IO-ANALYTICS-METRIC",
+        "name": "Analytics Metric",
+        "conceptId": "D7",
+        "managedBy": [
+          "PLT-3.1",
+          "PLT-3.2"
+        ]
+      },
+      "IO-USER-ACCOUNT": {
+        "id": "IO-USER-ACCOUNT",
+        "name": "User Account",
+        "conceptId": "R5",
+        "managedBy": [
+          "PLT-4.1"
+        ]
+      },
+      "IO-PRIVACY-RECORD": {
+        "id": "IO-PRIVACY-RECORD",
+        "name": "Privacy Record",
+        "conceptId": "D10",
+        "managedBy": [
+          "PLT-4.2"
+        ]
+      },
+      "IO-INVOICE": {
+        "id": "IO-INVOICE",
+        "name": "Invoice",
+        "conceptId": "D8",
+        "managedBy": [
+          "OPS-1.1"
+        ]
+      },
+      "IO-PAYMENT": {
+        "id": "IO-PAYMENT",
+        "name": "Payment",
+        "conceptId": "D8",
+        "managedBy": [
+          "OPS-1.2"
+        ]
+      },
+      "IO-FINANCIAL-RECORD": {
+        "id": "IO-FINANCIAL-RECORD",
+        "name": "Financial Record",
+        "conceptId": "D8",
+        "managedBy": [
+          "OPS-1.3"
+        ]
+      },
+      "IO-RESOURCE-PLAN": {
+        "id": "IO-RESOURCE-PLAN",
+        "name": "Resource Plan",
+        "conceptId": "P4",
+        "managedBy": [
+          "OPS-2.1"
+        ]
+      },
+      "IO-ASSOCIATE": {
+        "id": "IO-ASSOCIATE",
+        "name": "Associate",
+        "conceptId": "P4",
+        "managedBy": [
+          "OPS-2.2"
+        ]
+      },
+      "IO-VENDOR": {
+        "id": "IO-VENDOR",
+        "name": "Vendor",
+        "conceptId": "P6",
+        "managedBy": [
+          "OPS-3.1"
+        ]
+      },
+      "IO-SUBSCRIPTION": {
+        "id": "IO-SUBSCRIPTION",
+        "name": "Subscription",
+        "conceptId": "R5",
+        "managedBy": [
+          "OPS-3.2"
+        ]
+      },
+      "IO-RECORD": {
+        "id": "IO-RECORD",
+        "name": "Record",
+        "conceptId": "D10",
+        "managedBy": [
+          "OPS-4.1"
+        ]
+      },
+      "IO-COMPLIANCE-OBLIGATION": {
+        "id": "IO-COMPLIANCE-OBLIGATION",
+        "name": "Compliance Obligation",
+        "conceptId": "D10",
+        "managedBy": [
+          "OPS-4.2"
+        ]
+      }
+    }
+  }
+}

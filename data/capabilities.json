@@ -1,0 +1,123 @@
+{
+  "organisation": "Business Analyst Services",
+  "domains": [
+    {"id":"PSG","name":"Practice Strategy & Governance","l2":[
+      {"id":"PSG-1","name":"Practice Strategy & Positioning","l3":[
+        {"id":"PSG-1.1","name":"Market Positioning Definition","businessObject":"Practice Strategy"},
+        {"id":"PSG-1.2","name":"Service Portfolio Planning","businessObject":"Service Offering"},
+        {"id":"PSG-1.3","name":"Pricing & Packaging","businessObject":"Service Offering"}]},
+      {"id":"PSG-2","name":"Methodology Stewardship","l3":[
+        {"id":"PSG-2.1","name":"Methodology Definition","businessObject":"Methodology"},
+        {"id":"PSG-2.2","name":"Framework Mapping & Alignment","businessObject":"Methodology"}]},
+      {"id":"PSG-3","name":"Quality Assurance","l3":[
+        {"id":"PSG-3.1","name":"Deliverable Review","businessObject":"Deliverable"},
+        {"id":"PSG-3.2","name":"Practice Standards Management","businessObject":"Standard"}]},
+      {"id":"PSG-4","name":"AI Governance & Ethics","l3":[
+        {"id":"PSG-4.1","name":"AI Usage Policy Management","businessObject":"AI Policy"},
+        {"id":"PSG-4.2","name":"AI Output Assurance","businessObject":"AI Policy"}]}]},
+    {"id":"CEA","name":"Client Engagement & Advisory","l2":[
+      {"id":"CEA-1","name":"Opportunity Qualification","l3":[
+        {"id":"CEA-1.1","name":"Enquiry Triage","businessObject":"Opportunity"},
+        {"id":"CEA-1.2","name":"Needs Assessment","businessObject":"Opportunity"},
+        {"id":"CEA-1.3","name":"Proposal Development","businessObject":"Proposal"}]},
+      {"id":"CEA-2","name":"Engagement Contracting","l3":[
+        {"id":"CEA-2.1","name":"Statement of Work Agreement","businessObject":"Contract"},
+        {"id":"CEA-2.2","name":"Commercial Terms Setting","businessObject":"Contract"}]},
+      {"id":"CEA-3","name":"Business Analysis Delivery","l3":[
+        {"id":"CEA-3.1","name":"Stakeholder Analysis","businessObject":"Stakeholder"},
+        {"id":"CEA-3.2","name":"Requirements Elicitation","businessObject":"Requirement"},
+        {"id":"CEA-3.3","name":"Requirements Specification","businessObject":"Requirement"},
+        {"id":"CEA-3.4","name":"Process & Capability Modelling","businessObject":"Model"},
+        {"id":"CEA-3.5","name":"Solution Option Analysis","businessObject":"Solution Option"},
+        {"id":"CEA-3.6","name":"Traceability Management","businessObject":"Requirement"}]},
+      {"id":"CEA-4","name":"Engagement Governance","l3":[
+        {"id":"CEA-4.1","name":"Engagement Planning","businessObject":"Engagement"},
+        {"id":"CEA-4.2","name":"Progress & Status Reporting","businessObject":"Status Report"},
+        {"id":"CEA-4.3","name":"Risk & Issue Management","businessObject":"Risk"},
+        {"id":"CEA-4.4","name":"Change Control","businessObject":"Change Request"}]},
+      {"id":"CEA-5","name":"Closure & Benefits Realisation","l3":[
+        {"id":"CEA-5.1","name":"Deliverable Handover","businessObject":"Deliverable"},
+        {"id":"CEA-5.2","name":"Benefits Assessment","businessObject":"Benefit"},
+        {"id":"CEA-5.3","name":"Engagement Retrospective","businessObject":"Engagement"}]}]},
+    {"id":"KID","name":"Knowledge & IP Development","l2":[
+      {"id":"KID-1","name":"Research & Insight","l3":[
+        {"id":"KID-1.1","name":"Market & Vendor Research","businessObject":"Research Finding"},
+        {"id":"KID-1.2","name":"Practice Research","businessObject":"Research Finding"}]},
+      {"id":"KID-2","name":"Authoring & Publication","l3":[
+        {"id":"KID-2.1","name":"Manuscript Authoring","businessObject":"Publication"},
+        {"id":"KID-2.2","name":"Editorial Review","businessObject":"Publication"},
+        {"id":"KID-2.3","name":"Publishing & Distribution","businessObject":"Publication"}]},
+      {"id":"KID-3","name":"Playbook & Asset Development","l3":[
+        {"id":"KID-3.1","name":"Playbook Design","businessObject":"Playbook"},
+        {"id":"KID-3.2","name":"Template & Tool Development","businessObject":"Template"},
+        {"id":"KID-3.3","name":"Visual Asset Production","businessObject":"Visual Asset"}]},
+      {"id":"KID-4","name":"IP Lifecycle Management","l3":[
+        {"id":"KID-4.1","name":"IP Versioning","businessObject":"IP Asset"},
+        {"id":"KID-4.2","name":"IP Licensing & Rights","businessObject":"IP Asset"}]}]},
+    {"id":"LTR","name":"Learning & Training","l2":[
+      {"id":"LTR-1","name":"Curriculum Design","l3":[
+        {"id":"LTR-1.1","name":"Learning Outcome Definition","businessObject":"Curriculum"},
+        {"id":"LTR-1.2","name":"Module & Session Design","businessObject":"Curriculum"},
+        {"id":"LTR-1.3","name":"Courseware Production","businessObject":"Courseware"}]},
+      {"id":"LTR-2","name":"Scheduling & Enrolment","l3":[
+        {"id":"LTR-2.1","name":"Cohort Scheduling","businessObject":"Cohort"},
+        {"id":"LTR-2.2","name":"Registration & Ticketing","businessObject":"Enrolment"},
+        {"id":"LTR-2.3","name":"Enrolment Administration","businessObject":"Enrolment"}]},
+      {"id":"LTR-3","name":"Facilitation & Delivery","l3":[
+        {"id":"LTR-3.1","name":"Session Facilitation","businessObject":"Session"},
+        {"id":"LTR-3.2","name":"Workshop Facilitation","businessObject":"Session"},
+        {"id":"LTR-3.3","name":"Learner Support","businessObject":"Learner"}]},
+      {"id":"LTR-4","name":"Assessment & Certification","l3":[
+        {"id":"LTR-4.1","name":"Assessment Design","businessObject":"Assessment"},
+        {"id":"LTR-4.2","name":"Assessment Marking","businessObject":"Assessment"},
+        {"id":"LTR-4.3","name":"Certification Issuance","businessObject":"Certificate"}]},
+      {"id":"LTR-5","name":"Learner Feedback","l3":[
+        {"id":"LTR-5.1","name":"Feedback Collection","businessObject":"Feedback"},
+        {"id":"LTR-5.2","name":"Course Improvement","businessObject":"Curriculum"}]}]},
+    {"id":"MKT","name":"Market Development","l2":[
+      {"id":"MKT-1","name":"Brand & Content","l3":[
+        {"id":"MKT-1.1","name":"Brand Management","businessObject":"Brand"},
+        {"id":"MKT-1.2","name":"Content Production","businessObject":"Content Item"},
+        {"id":"MKT-1.3","name":"Content Publishing","businessObject":"Content Item"}]},
+      {"id":"MKT-2","name":"Campaign Execution","l3":[
+        {"id":"MKT-2.1","name":"Campaign Planning","businessObject":"Campaign"},
+        {"id":"MKT-2.2","name":"Campaign Delivery","businessObject":"Campaign"},
+        {"id":"MKT-2.3","name":"Campaign Performance Analysis","businessObject":"Campaign"}]},
+      {"id":"MKT-3","name":"Lead Management","l3":[
+        {"id":"MKT-3.1","name":"Lead Capture","businessObject":"Lead"},
+        {"id":"MKT-3.2","name":"Lead Nurture","businessObject":"Lead"},
+        {"id":"MKT-3.3","name":"Lead Conversion","businessObject":"Lead"}]},
+      {"id":"MKT-4","name":"Partnerships & Community","l3":[
+        {"id":"MKT-4.1","name":"Partner Relationship Management","businessObject":"Partner"},
+        {"id":"MKT-4.2","name":"Community & Study Group Facilitation","businessObject":"Community Member"}]}]},
+    {"id":"PLT","name":"Platform & Technology","l2":[
+      {"id":"PLT-1","name":"Product Engineering","l3":[
+        {"id":"PLT-1.1","name":"Product Backlog Management","businessObject":"Backlog Item"},
+        {"id":"PLT-1.2","name":"Software Development","businessObject":"Software Component"},
+        {"id":"PLT-1.3","name":"Automated Testing","businessObject":"Test Case"}]},
+      {"id":"PLT-2","name":"Release & Environment Management","l3":[
+        {"id":"PLT-2.1","name":"Environment Provisioning","businessObject":"Environment"},
+        {"id":"PLT-2.2","name":"Release Deployment","businessObject":"Release"},
+        {"id":"PLT-2.3","name":"Incident Response","businessObject":"Incident"}]},
+      {"id":"PLT-3","name":"Data & Analytics","l3":[
+        {"id":"PLT-3.1","name":"Usage Analytics","businessObject":"Analytics Metric"},
+        {"id":"PLT-3.2","name":"Reporting & Dashboards","businessObject":"Analytics Metric"}]},
+      {"id":"PLT-4","name":"Security & Access","l3":[
+        {"id":"PLT-4.1","name":"Identity & Access Management","businessObject":"User Account"},
+        {"id":"PLT-4.2","name":"Data Protection & Privacy","businessObject":"Privacy Record"}]}]},
+    {"id":"OPS","name":"Business Operations","l2":[
+      {"id":"OPS-1","name":"Finance & Billing","l3":[
+        {"id":"OPS-1.1","name":"Invoicing","businessObject":"Invoice"},
+        {"id":"OPS-1.2","name":"Payment Collection","businessObject":"Payment"},
+        {"id":"OPS-1.3","name":"Financial Reporting","businessObject":"Financial Record"}]},
+      {"id":"OPS-2","name":"Resourcing & Capacity","l3":[
+        {"id":"OPS-2.1","name":"Capacity Planning","businessObject":"Resource Plan"},
+        {"id":"OPS-2.2","name":"Associate & Contractor Sourcing","businessObject":"Associate"}]},
+      {"id":"OPS-3","name":"Vendor & Subscription Management","l3":[
+        {"id":"OPS-3.1","name":"Vendor Selection","businessObject":"Vendor"},
+        {"id":"OPS-3.2","name":"Subscription Administration","businessObject":"Subscription"}]},
+      {"id":"OPS-4","name":"Compliance & Records","l3":[
+        {"id":"OPS-4.1","name":"Records Management","businessObject":"Record"},
+        {"id":"OPS-4.2","name":"Regulatory Compliance","businessObject":"Compliance Obligation"}]}]}
+  ]
+}
