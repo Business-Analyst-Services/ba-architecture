@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Downloads · Business Analyst Services Business Architecture</title>
+<meta name="description" content="The model as a VCC import bundle, four spreadsheet registers, and the raw source data.">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="assets/css/site.css">
+<script>(function(){try{var t=localStorage.getItem('bas-ba-theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="index.html">
+      <span class="mk" aria-hidden="true">BAS</span>
+      <span>Business Architecture<small>Business Analyst Services</small></span>
+    </a>
+    <nav class="site-nav" aria-label="Sections">
+      <ul><li><a href="index.html">Overview</a></li><li><a href="capability-map.html">Capability map</a></li><li><a href="concept-model.html">Concept model</a></li><li><a href="value-streams.html">Value streams</a></li><li><a href="method.html">Method</a></li><li><a href="downloads.html" aria-current="page">Downloads</a></li></ul>
+    </nav>
+    <button type="button" id="theme-toggle" class="theme-btn" hidden>Dark mode</button>
+  </div>
+</header>
+<main id="main">
+
+<div class="page-head">
+  <p class="eyebrow">Take it with you</p>
+  <h1>Downloads</h1>
+  <p class="lede">Everything on this site is generated from the files below. The bundle
+  is the import format; the workbooks are for reading and annotating; the raw JSON is for
+  anyone who wants to fork the model and change it.</p>
+</div>
+
+<section class="section">
+  <h2>Deliverables</h2>
+  <ul class="dl"><li>
+  <span class="fmt">JSON</span>
+  <div class="meta"><h3>Complete bundle</h3><p>The whole model in one file against ba-skills-bundle schema v1.0.0 — capabilities at all three levels, concepts, value streams, stages, outcomes, roles, metrics and information objects. This is the import file for VCC and the PlausibleBA canvas.</p>
+  <p style="color:var(--ink-3);font-size:12.5px;margin-top:6px">
+  <span class="mono">business-analyst-services-ba-skills-bundle.json</span> · 56 KB</p></div>
+  <a class="btn" href="downloads/business-analyst-services-ba-skills-bundle.json" download>Download</a>
+</li><li>
+  <span class="fmt">XLSX</span>
+  <div class="meta"><h3>Capability register</h3><p>Four tabs: the full level-3 register, a level-1 domain rollup, a level-2 rollup, and a read-me covering structure and provenance. The rollups are live formulas, so they follow any rows you add or remove.</p>
+  <p style="color:var(--ink-3);font-size:12.5px;margin-top:6px">
+  <span class="mono">business_analyst_services_capability_map.xlsx</span> · 19 KB</p></div>
+  <a class="btn" href="downloads/business_analyst_services_capability_map.xlsx" download>Download</a>
+</li><li>
+  <span class="fmt">XLSX</span>
+  <div class="meta"><h3>Object register</h3><p>Four tabs: objects with definitions and what each absorbs, all relationships, a formula-driven type summary, and a read-me. Inbound and outbound relationship counts are computed from the relationships tab.</p>
+  <p style="color:var(--ink-3);font-size:12.5px;margin-top:6px">
+  <span class="mono">business_analyst_services_concept_model.xlsx</span> · 17 KB</p></div>
+  <a class="btn" href="downloads/business_analyst_services_concept_model.xlsx" download>Download</a>
+</li><li>
+  <span class="fmt">XLSX</span>
+  <div class="meta"><h3>Stage register — Client Need to Realised Benefit</h3><p>Four tabs: stages in sequence with entry and exit states, the stage-to-capability mapping one row per pair, candidate metrics, and a read-me.</p>
+  <p style="color:var(--ink-3);font-size:12.5px;margin-top:6px">
+  <span class="mono">business_analyst_services_value_stream_client_need_to_realised_benefit.xlsx</span> · 17 KB</p></div>
+  <a class="btn" href="downloads/business_analyst_services_value_stream_client_need_to_realised_benefit.xlsx" download>Download</a>
+</li><li>
+  <span class="fmt">XLSX</span>
+  <div class="meta"><h3>Stage register — Learner Interest to Capability Applied</h3><p>Same four-tab shape as the consulting stream register.</p>
+  <p style="color:var(--ink-3);font-size:12.5px;margin-top:6px">
+  <span class="mono">business_analyst_services_value_stream_learner_interest_to_capability_applied.xlsx</span> · 16 KB</p></div>
+  <a class="btn" href="downloads/business_analyst_services_value_stream_learner_interest_to_capability_applied.xlsx" download>Download</a>
+</li></ul>
+</section>
+
+<section class="section">
+  <h2>Loading the bundle</h2>
+  <ul class="bullets">
+    <li><strong><a href="https://www.plausibleba.com/canvas">PlausibleBA Canvas</a></strong>
+    — upload the bundle JSON for the interactive visualisation.</li>
+    <li><strong><a href="https://vcc.plausibleba.com">VCC</a></strong> — import the bundle
+    for workshopping, enrichment and PPIT mapping.</li>
+  </ul>
+</section>
+
+<section class="section">
+  <h2>Source data</h2>
+  <p>These three files are the model. The site is a rendering of them, and
+  <span class="mono">build.py</span> is the renderer — edit the data, re-run the build,
+  and every page and table follows.</p>
+  <div class="tw"><table>
+    <caption>Model data served alongside the site.</caption>
+    <thead><tr><th scope="col">File</th><th scope="col">Contents</th>
+    <th scope="col">Size</th></tr></thead>
+    <tbody><tr><td><a href="data/capabilities.json"><span class="mono">capabilities.json</span></a></td><td>The capability map: domains, level-2 capabilities, and level-3 capabilities with their business objects.</td><td>9 KB</td></tr><tr><td><a href="data/concepts.json"><span class="mono">concepts.json</span></a></td><td>The concept model: objects with type, definition and what each consolidates, plus the relationship list.</td><td>6 KB</td></tr><tr><td><a href="data/valuestreams.json"><span class="mono">valuestreams.json</span></a></td><td>The value streams: roles, and each stream&#x27;s stages with entry and exit states, capability mappings, outcomes and metrics.</td><td>7 KB</td></tr><tr><td><a href="data/ba-skills-bundle.json"><span class="mono">ba-skills-bundle.json</span></a></td><td>The assembled bundle, as served to the pages.</td><td>56 KB</td></tr></tbody>
+  </table></div>
+</section>
+
+<section class="section">
+  <h2>Reuse</h2>
+  <p>The <strong>structure</strong> — seven domains, Party/Resource/Record, stages defined
+  by entry and exit state — is the PlausibleBA method and is meant to be copied. The
+  <strong>content</strong> describes one specific practice and will not fit yours; treat it
+  as a worked example to argue with rather than a template to fill in.</p>
+  <p>Model content is published under
+  <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>; the build script
+  is MIT. See <span class="mono">LICENSE</span> in the repository.</p>
+</section>
+</main>
+<footer class="site-foot">
+  <div class="foot-in">
+    <p><strong>Business Analyst Services</strong> — a business analysis consulting, training and
+    advisory practice in Sydney, Australia.
+    <a href="https://business-analyst.services">business-analyst.services</a></p>
+    <p>This model was produced with the PlausibleBA skills library and is published
+    as a worked example. Last updated 2026-10-13.
+    <a href="method.html">How it was made</a> · <a href="downloads.html">Download the model</a></p>
+  </div>
+</footer>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

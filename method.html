@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Method · Business Analyst Services Business Architecture</title>
+<meta name="description" content="How the model was built: the phases, the checkpoints, the arguable calls, and how the output was verified.">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="assets/css/site.css">
+<script>(function(){try{var t=localStorage.getItem('bas-ba-theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="index.html">
+      <span class="mk" aria-hidden="true">BAS</span>
+      <span>Business Architecture<small>Business Analyst Services</small></span>
+    </a>
+    <nav class="site-nav" aria-label="Sections">
+      <ul><li><a href="index.html">Overview</a></li><li><a href="capability-map.html">Capability map</a></li><li><a href="concept-model.html">Concept model</a></li><li><a href="value-streams.html">Value streams</a></li><li><a href="method.html" aria-current="page">Method</a></li><li><a href="downloads.html">Downloads</a></li></ul>
+    </nav>
+    <button type="button" id="theme-toggle" class="theme-btn" hidden>Dark mode</button>
+  </div>
+</header>
+<main id="main">
+
+<div class="page-head">
+  <p class="eyebrow">Provenance</p>
+  <h1>How this model was built</h1>
+  <p class="lede">A model is only as trustworthy as the account of how it was made.
+  This page records what was elicited, what was decided and by whom, which calls are
+  arguable, and what was actually checked.</p>
+</div>
+
+<section class="section">
+  <h2>The run</h2>
+  <dl class="facts">
+    <dt>Method</dt><dd>PlausibleBA skills library v1.5.0, three phases in one session</dd>
+    <dt>Elicited</dt><dd>15 September 2026</dd>
+    <dt>Site last updated</dt><dd>2026-10-13</dd>
+    <dt>Input</dt><dd>A description of the practice. No external reference model, no
+    client data, no survey — the content is self-reported and should be read that way.</dd>
+    <dt>Scaffold ID</dt><dd><span class="mono">ff32d393-0683-4be7-9108-134ef7198995</span></dd>
+  </dl>
+</section>
+
+<section class="section">
+  <h2>Phases and checkpoints</h2>
+  <p>Each phase stopped at a confirmation checkpoint before anything downstream was
+  built. Capability mapping takes two, because committing to level 3 before the level-1
+  and level-2 structure is agreed wastes the decomposition.</p>
+  <ol class="bullets">
+    <li><strong>Checkpoint 1A</strong> — 7 domains and
+    30 level-2 capabilities. Confirmed as drafted. The
+    alternative considered and rejected was narrowing to consulting plus training, which
+    would have dropped Platform &amp; Technology.</li>
+    <li><strong>Checkpoint 1B</strong> — the 81 level-3 capabilities with a
+    business object on each. Confirmed as drafted.</li>
+    <li><strong>Checkpoint 2</strong> — 57 business objects consolidated to
+    22 concept objects, classified and related. Confirmed as drafted.
+    Rejected alternatives: splitting Outcome&nbsp;&amp;&nbsp;Insight into benefit and
+    insight, promoting Lead to its own object, and collapsing further to about 15.</li>
+    <li><strong>Checkpoint 3</strong> — the stage draft for both streams. Confirmed with
+    both streams retained, rather than consulting only, a single merged stream, or a
+    split of the final stage.</li>
+  </ol>
+</section>
+
+<section class="section">
+  <h2>Calls that could reasonably go the other way</h2>
+  <ul class="bullets">
+    <li><strong>Lead folded into Opportunity.</strong> Treating unqualified interest as
+    an early state of Opportunity suits a practice where enquiries are few and
+    personally handled. A real marketing funnel needs Lead as its own record.</li>
+    <li><strong>Practice Strategy folded into Service Offering.</strong> This makes
+    strategy a property of the portfolio rather than a thing the practice manages. The
+    cost is that strategic capabilities have nowhere obvious to attach.</li>
+    <li><strong>Outcome &amp; Insight as one object.</strong> It carries benefits
+    realised, learner feedback, research findings and usage metrics. That breadth is
+    what lets it close the loop in one relationship, and it is also the reason someone
+    could argue it is two objects wearing one name.</li>
+    <li><strong>Assessment inside Course, Certificate inside Enrolment.</strong> Assessment
+    design is a resource; a marked assessment is evidence. Splitting them across two
+    objects is a judgement, not a rule.</li>
+    <li><strong>No third value stream.</strong> The most consequential omission.
+    <a href="value-streams.html#unmapped">Six capabilities are stranded by it.</a></li>
+  </ul>
+</section>
+
+<section class="section">
+  <h2>The bundle</h2>
+  <p>The whole model serialises to one JSON file against the ba-skills-bundle schema
+  v1.0.0, for import into VCC or the PlausibleBA canvas.
+  Element counts:</p>
+  <dl class="facts"><dt>capabilities</dt><dd>118</dd><dt>concepts</dt><dd>22</dd><dt>valueStreams</dt><dd>2</dd><dt>valueStreamStages</dt><dd>11</dd><dt>outcomes</dt><dd>11</dd><dt>roles</dt><dd>8</dd><dt>metrics</dt><dd>24</dd><dt>informationObjects</dt><dd>57</dd></dl>
+  <p>Capabilities number 118 because the bundle carries all three
+  levels; 81 of them are level 3. Information objects are the
+  57 business objects from the capability map, each linked to the concept
+  object that consolidates it and to the capabilities that manage it.</p>
+  <p><a class="btn" href="downloads/business-analyst-services-ba-skills-bundle.json" download>Download the bundle</a></p>
+</section>
+
+<section class="section">
+  <h2>Roles referenced</h2>
+  <div class="tw"><table>
+    <caption>Roles named by value stream stages.</caption>
+    <thead><tr><th scope="col">ID</th><th scope="col">Role</th><th scope="col">Description</th></tr></thead>
+    <tbody><tr><td><span class="mono">RO1</span></td><td>Practice Lead</td><td>Owns positioning, methodology and commercial terms.</td></tr><tr><td><span class="mono">RO2</span></td><td>Lead Business Analyst</td><td>Runs elicitation, specification and deliverable production on an engagement.</td></tr><tr><td><span class="mono">RO3</span></td><td>Facilitator</td><td>Delivers courses, workshops and study sessions.</td></tr><tr><td><span class="mono">RO4</span></td><td>Engagement Sponsor</td><td>Client-side owner who funds the work and accepts deliverables.</td></tr><tr><td><span class="mono">RO5</span></td><td>Learner</td><td>Individual undertaking a BAS course.</td></tr><tr><td><span class="mono">RO6</span></td><td>Marketing Lead</td><td>Owns brand, content and campaign execution.</td></tr><tr><td><span class="mono">RO7</span></td><td>Platform Engineer</td><td>Builds and operates the BAS platform.</td></tr><tr><td><span class="mono">RO8</span></td><td>Practice Administrator</td><td>Handles enrolment, invoicing, records and vendor admin.</td></tr></tbody>
+  </table></div>
+</section>
+
+<section class="section">
+  <h2>What was verified</h2>
+  <p>Checks that were actually run, not an aspiration:</p>
+  <ul class="bullets">
+    <li><strong>Referential integrity across the bundle.</strong> Every parent, concept,
+    capability, value-object, role, outcome, metric and stage reference resolves to an
+    element that exists, and every map key equals its own element ID.</li>
+    <li><strong>Consolidation completeness.</strong> All 57 capability-map
+    business objects resolve to exactly one of the 22 concept objects.</li>
+    <li><strong>Coverage.</strong> 67 of 81 capabilities map to a
+    stage; the 14 that do not are enumerated in the bundle metadata and match
+    the computed set.</li>
+    <li><strong>Workbooks.</strong> Each register opens with its four expected tabs and
+    recalculates with zero formula errors under LibreOffice. Rollups reconcile: domain
+    counts to 81, percentages to 100%, relationship counts to
+    35 outbound and 35 inbound.</li>
+    <li><strong>Accessibility.</strong> Every figure has a text alternative and a table
+    view, every interactive mark is keyboard-reachable and labelled, and the colour
+    palette was validated rather than eyeballed — see below.</li>
+  </ul>
+</section>
+
+<section class="section">
+  <h2>Colour, and why it is not the brand palette</h2>
+  <p>The practice's brand hexes are navy <span class="mono">#23446E</span> and
+  <span class="mono">#003E52</span>, teal <span class="mono">#5ABABA</span> and orange
+  <span class="mono">#FF8300</span>. Used directly as the seven domain colours they fail
+  a categorical palette check: the two navies fall outside the usable lightness band, and
+  three of the four sit below the chroma floor, which means they read as grey once they
+  are small.</p>
+  <p>So the data colours keep the brand <em>hue angles</em> and re-step the lightness and
+  chroma into the passing band, with four further hues spaced around the wheel. The
+  resulting order was validated for colour-blind separation and surface contrast in both
+  light and dark modes, and the dark steps were chosen for the dark surface rather than
+  flipped from the light ones.</p>
+  <p>Raw brand colours still do the chrome — wordmark, buttons, the accent on the current
+  nav item. Every chart also labels its marks directly and ships a table view, so no
+  reading of any figure depends on telling two colours apart.</p>
+</section>
+
+<section class="section">
+  <h2>Honest limitations</h2>
+  <ul class="bullets">
+    <li>The content is <strong>self-reported in a single session</strong>. Nobody else was
+    interviewed, and no client or learner was asked whether the stages match their
+    experience.</li>
+    <li>Metrics are <strong>proposed, never baselined</strong>. No value in the model has
+    been measured.</li>
+    <li>Capability <strong>maturity and ownership are not modelled</strong> at all. The map
+    says what the practice can do, not how well or who is accountable.</li>
+    <li>The third value stream is <strong>missing</strong>, and six capabilities are
+    stranded as a result.</li>
+    <li>The level-3 count, 81, is on the <strong>large side</strong> for a
+    practice this size. It is honest about the breadth of work but would be hard to
+    govern as a live artefact without pruning.</li>
+  </ul>
+</section>
+
+<section class="section">
+  <h2>Rebuilding the site</h2>
+  <p>The pages are generated from the model data, so the data is the source of truth and
+  the HTML is disposable:</p>
+  <pre><code>python3 build.py</code></pre>
+  <p>Edit <span class="mono">data/capabilities.json</span>,
+  <span class="mono">data/concepts.json</span> or
+  <span class="mono">data/valuestreams.json</span> and re-run. No dependencies beyond the
+  Python standard library.</p>
+</section>
+</main>
+<footer class="site-foot">
+  <div class="foot-in">
+    <p><strong>Business Analyst Services</strong> — a business analysis consulting, training and
+    advisory practice in Sydney, Australia.
+    <a href="https://business-analyst.services">business-analyst.services</a></p>
+    <p>This model was produced with the PlausibleBA skills library and is published
+    as a worked example. Last updated 2026-10-13.
+    <a href="method.html">How it was made</a> · <a href="downloads.html">Download the model</a></p>
+  </div>
+</footer>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
